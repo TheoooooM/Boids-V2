@@ -444,7 +444,42 @@ PrefabInstance:
     - target: {fileID: 2368691842506206799, guid: 8928aa552723fb94b8e84afa5d707959,
         type: 3}
       propertyPath: boidsAmount
-      value: 30
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2368691842506206799, guid: 8928aa552723fb94b8e84afa5d707959,
+        type: 3}
+      propertyPath: quadrantSize
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2368691842506206799, guid: 8928aa552723fb94b8e84afa5d707959,
+        type: 3}
+      propertyPath: startZoneSize.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2368691842506206799, guid: 8928aa552723fb94b8e84afa5d707959,
+        type: 3}
+      propertyPath: startZoneSize.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2368691842506206799, guid: 8928aa552723fb94b8e84afa5d707959,
+        type: 3}
+      propertyPath: startZoneSize.z
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2368691842506206799, guid: 8928aa552723fb94b8e84afa5d707959,
+        type: 3}
+      propertyPath: boidsMaxDistance
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 2368691842506206799, guid: 8928aa552723fb94b8e84afa5d707959,
+        type: 3}
+      propertyPath: displayMaxDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2368691842506206799, guid: 8928aa552723fb94b8e84afa5d707959,
+        type: 3}
+      propertyPath: displayStartBorder
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3918813519680207195, guid: 8928aa552723fb94b8e84afa5d707959,
         type: 3}

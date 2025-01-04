@@ -19,18 +19,23 @@ public class Boids : MonoBehaviour
     [SerializeField] private bool displayDetectionDistance;
     
     public BoidsFlock parentFlock { get; set; }
+    public Vector3Int QuadrantPosition; //{ get; set; }
+    
 
     private Quaternion targetRotation;
 
     private void Update()
     {
-        List<Transform> neighbors = parentFlock.GetBoids(); //Get Flock Boids
+        //List<Transform> neighbors = parentFlock.GetBoids(); //Get Flock Boids
+        List<Transform> neighbors = parentFlock.GetQuadrantNeighbor(QuadrantPosition); //Get Flock Boids
         neighbors.Remove(transform); //Remove Self
         ComputeNeighbors(neighbors);
         ComputeFlockBorder();
         
         LerpRotation(); //Rotate
         Move(); // Move
+        
+        
     }
     
     /// <summary>
@@ -60,7 +65,6 @@ public class Boids : MonoBehaviour
         if (flockCenterDirection.magnitude < parentFlock.BoidsMaxDistance) return;
         Vector3 newDirection = ((targetRotation * Vector3.forward + flockCenterDirection) / 2).normalized;
         targetRotation = Quaternion.LookRotation(newDirection);
-        
     }
 
     void LerpRotation()

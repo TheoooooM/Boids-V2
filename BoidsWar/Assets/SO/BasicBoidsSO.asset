@@ -12,3 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7aa42fc98fa4097bf284ed3fcfa7d94, type: 3}
   m_Name: BasicBoidsSO
   m_EditorClassIdentifier: 
+  angleSpeed: 100
+  moveSpeed: 5
+  separateDistance: 3.47
+  alignDistance: 4.59
+  cohesionDistance: 6.08
